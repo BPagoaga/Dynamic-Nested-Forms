@@ -1,0 +1,18 @@
+<form [formGroup]="choiceForm">
+  <table>
+    <tr>
+      <td>
+        <mat-checkbox formControlName="isValid"></mat-checkbox>
+
+        <mat-form-field>
+              <input matInput formControlName="value" placeholder="Réponse possible">
+        </mat-form-field>
+      </td>
+      <td>
+        <!-- emit delete event up w/ index of player -->
+        <button (click)="delete()">Delete</button>
+      </td>
+    </tr>
+  </table>
+</form>
+<mat-divider></mat-divider>
